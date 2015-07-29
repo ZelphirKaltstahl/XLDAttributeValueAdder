@@ -1,0 +1,28 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<xsd:element name="list">
+		<xsd:complexType>
+			<xsd:sequence><!--arbitrary number of log entries-->
+	
+				<xsd:element name="vocable" minOccurs="0" maxOccurs="unbounded"><!--a log entry is a complex type-->
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="firstLanguageTranslations" type="xsd:string" minOccurs="1" maxOccurs="1" />
+							<xsd:element name="firstLanguagePhoneticScripts" type="xsd:string" minOccurs="1" maxOccurs="1" />
+							<xsd:element name="secondLanguageTranslations" type="xsd:string" minOccurs="1" maxOccurs="1" />
+							<xsd:element name="secondLanguagePhoneticScripts" type="xsd:string" minOccurs="1" maxOccurs="1" />
+							
+							<xsd:element name="topics" type="xsd:string" minOccurs="1" maxOccurs="1" />
+							<xsd:element name="chapters" type="xsd:string" minOccurs="1" maxOccurs="1" />
+							<xsd:element name="description" type="xsd:string" minOccurs="1" maxOccurs="1" />
+							<xsd:element name="learnLevel" type="xsd:string" minOccurs="1" maxOccurs="1" />
+							<xsd:element name="relevanceLevel" type="xsd:string" minOccurs="1" maxOccurs="1" />
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+	
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+</xsd:schema>
