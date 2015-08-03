@@ -1,9 +1,12 @@
 from xldattributeadder import XLDAttributeAdder
 from xldattributeadder.VocableFileWriter import VocableFileWriter
+from xldattributeadder.gui.XLDAttributeValueAdderWindow import XLDAttributeValueAdderWindow
 
 __author__ = 'xiaolong'
 
 def main():
+	
+	xld_attribute_value_adder = XLDAttributeValueAdderWindow()
 	
 	vocable_file_path = input('Vocable file path:')
 	xsd_file_path = input('XSD file path:')

@@ -49,7 +49,8 @@ class TestXLDAttributeAdder:
 			['aelterer Bruder (der)','---','哥哥','gēge','Familie','PC03 / NPC02','---','5','---'],
 			['er / ihm / ihn','---','他','tā','Grammatik / Personalpronomen','PC03 / LSC01 / NPC02','---','5','---']
 		]
-	
+		
+		self.ATTRIBUTE_SEPARATOR = '/'
 	
 	def teardown (self):
 		pass
@@ -313,10 +314,10 @@ class TestXLDAttributeAdder:
 				print(vocable_word_attribute_text, 'is in word list')
 				attribute_text = vocable.find(self.attribute_name).text
 				# does this vocable have the added attribute value?
-				regex = '\s*' + self.attribute_value + '\s*$'
+				regex = '^.*'+re.escape(self.ATTRIBUTE_SEPARATOR) + self.attribute_value + re.escape(self.ATTRIBUTE_SEPARATOR)+'.*$'
 				print('regex:', regex)
 				print('attribute_text:', attribute_text)
-				assert re.search(regex, attribute_text) is None, 'attribute value has already added to vocable ' + vocable.find(self.words_attribute_name).text
+				assert re.match(regex, attribute_text) is None, 'attribute value has already added to vocable ' + vocable.find(self.words_attribute_name).text
 		
 		
 		# now add the attribute value
@@ -335,7 +336,7 @@ class TestXLDAttributeAdder:
 				print(vocable_word_attribute_text, 'is in word list')
 				attribute_text = vocable.find(self.attribute_name).text
 				# does this vocable have the added attribute value?
-				regex = '\s*' + self.attribute_value + '\s*$'
+				regex = r'\s*' + self.attribute_value + r'\s*$'
 				print('regex:', regex)
 				print('attribute_text:', attribute_text)
 				assert re.search(regex, attribute_text) is not None, 'attribute value has not been added to vocable ' + vocable.find(self.words_attribute_name).text

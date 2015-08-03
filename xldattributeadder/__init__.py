@@ -1,3 +1,3 @@
 __author__ = 'xiaolong'
 
-from xldattributeadder.XLDAttributeAdder import *
+from xldattributeadder.XLDAttributeValueAdder import *
