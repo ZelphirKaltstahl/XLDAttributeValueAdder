@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/xld-attribute-adder.iml" filepath="$PROJECT_DIR$/.idea/xld-attribute-adder.iml" />
+      <module fileurl="file://$USER_HOME$/Development/PycharmProjects/xld-attribute-value-adder/.idea/xld-attribute-value-adder.iml" filepath="$USER_HOME$/Development/PycharmProjects/xld-attribute-value-adder/.idea/xld-attribute-value-adder.iml" />
     </modules>
   </component>
 </project>

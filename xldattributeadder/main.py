@@ -16,9 +16,9 @@ def main():
 	words_attribute_name = input('Words attribute name:')
 	attribute_value = input('Attribute value:')
 	
-	if vocable_file_path == '': vocable_file_path = '/home/xiaolong/Development/PycharmProjects/xld-attribute-adder/res/vocables.xml'
-	if xsd_file_path == '': xsd_file_path = '/home/xiaolong/Development/PycharmProjects/xld-attribute-adder/res/xld-vocables-schema.xsd'
-	if words_file_path == '': words_file_path = '/home/xiaolong/Development/PycharmProjects/xld-attribute-adder/res/HSK2'
+	if vocable_file_path == '': vocable_file_path = '/home/xiaolong/Development/PycharmProjects/xld-attribute-value-adder/res/vocables.xml'
+	if xsd_file_path == '': xsd_file_path = '/home/xiaolong/Development/PycharmProjects/xld-attribute-value-adder/res/xld-vocables-schema.xsd'
+	if words_file_path == '': words_file_path = '/home/xiaolong/Development/PycharmProjects/xld-attribute-value-adder/res/HSK2'
 	if attribute_name == '': attribute_name = 'chapters'
 	if words_attribute_name == '': words_attribute_name = 'secondLanguageTranslations'
 	if attribute_value == '': attribute_value = 'HSK2-2012'
