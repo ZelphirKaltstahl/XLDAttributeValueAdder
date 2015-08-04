@@ -1,12 +1,12 @@
 import re
 
 from lxml import etree
-from xldattributeadder.WordListHelper import WordListHelper
-from xldattributeadder.WordListReader import WordListReader
-from xldattributeadder.exceptions.XMLInvalidException import XMLInvalidException
+from src.WordListHelper import WordListHelper
+from src.WordListReader import WordListReader
+from src.exceptions.XMLInvalidException import XMLInvalidException
 
-from xldattributeadder.exceptions.XMLParseException import XMLParserException
-from xldattributeadder.xmlparser import XMLParser
+from src.exceptions.XMLParseException import XMLParserException
+from src.xmlparser import XMLParser
 
 __author__ = 'xiaolong'
 

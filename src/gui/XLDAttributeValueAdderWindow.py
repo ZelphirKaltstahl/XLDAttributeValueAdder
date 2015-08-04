@@ -1,7 +1,7 @@
 from gi.repository import Gtk
 from gi.repository import Gio
 import sys
-from xldattributeadder.gui.GTKSignal import GTKSignal
+from src.gui.GTKSignal import GTKSignal
 
 
 class XLDAVA_Window(Gtk.ApplicationWindow):
@@ -51,7 +51,7 @@ class XLDAVA_App(Gtk.Application):
 	
 	# callback function for "new"
 	def new_callback (self, action, parameter):
-		print("This does nothing. It is only a demonstration.")
+		print("This does nothing new. It is only a demonstration.")
 	
 	# callback function for "about"
 	def about_callback (self, action, parameter):

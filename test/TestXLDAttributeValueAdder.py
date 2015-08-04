@@ -1,14 +1,14 @@
 import re
 import pytest
-from xldattributeadder.VocableFileWriter import VocableFileWriter
+from src.VocableFileWriter import VocableFileWriter
 
 __author__ = 'xiaolong'
 
 import os
 from xml.dom import minidom
 from lxml import etree
-from xldattributeadder import XLDAttributeAdder, XMLParser, XMLParserException, WordListReader, WordListHelper
-from xldattributeadder import XMLInvalidException
+from src import XLDAttributeAdder, XMLParser, XMLParserException, WordListReader, WordListHelper
+from src import XMLInvalidException
 
 
 class TestXLDAttributeAdder:

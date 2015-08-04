@@ -1,6 +1,6 @@
-from xldattributeadder import XLDAttributeAdder
-from xldattributeadder.VocableFileWriter import VocableFileWriter
-from xldattributeadder.gui.XLDAttributeValueAdderWindow import XLDAttributeValueAdderWindow
+from src import XLDAttributeAdder
+from src.VocableFileWriter import VocableFileWriter
+from src.gui.XLDAttributeValueAdderWindow import XLDAttributeValueAdderWindow
 
 __author__ = 'xiaolong'
 

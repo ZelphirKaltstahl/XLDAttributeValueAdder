@@ -3,7 +3,7 @@ from xml.dom import minidom
 
 from lxml import etree
 
-from xldattributeadder.exceptions.XMLParseException import XMLParserException
+from src.exceptions.XMLParseException import XMLParserException
 
 __author__ = 'xiaolong'
 
