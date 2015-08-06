@@ -1,7 +1,7 @@
 from gi.repository import Gtk
 from gi.repository import Gio
 import sys
-from src.gui.GTKSignal import GTKSignal
+from xldattributevalueadder.gui.GTKSignal import GTKSignal
 
 
 class XLDAVA_Window(Gtk.ApplicationWindow):

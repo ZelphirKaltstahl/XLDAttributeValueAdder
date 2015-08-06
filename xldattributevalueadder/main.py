@@ -1,13 +1,20 @@
-from src import XLDAttributeAdder
-from src.VocableFileWriter import VocableFileWriter
-from src.gui.XLDAttributeValueAdderWindow import XLDAttributeValueAdderWindow
+#!/home/xiaolong/Development/Anaconda3/envs/xld-attribute-value-adder/bin/python3.4
+# -*- coding: utf-8 -*-
+
+import os
+import sys
+from xldattributevalueadder.VocableFileWriter import VocableFileWriter
+from xldattributevalueadder.XLDAttributeValueAdder import XLDAttributeValueAdder
 
 __author__ = 'xiaolong'
 
 def main():
-	
-	xld_attribute_value_adder = XLDAttributeValueAdderWindow()
-	
+	'''
+	project_directory = os.path.dirname(os.path.realpath(__file__)) + '/'
+	sys.path.append(project_directory)
+	for p in sys.path:
+		print(p)
+	'''
 	vocable_file_path = input('Vocable file path:')
 	xsd_file_path = input('XSD file path:')
 	words_file_path = input('Word list file path:')
@@ -31,10 +38,12 @@ def main():
 	print('words attribute name: ', words_attribute_name, sep=' ', end='\n')
 	print('attribute_value: ', attribute_value, sep=' ', end='\n')
 	
-	xld_attribute_adder = XLDAttributeAdder(vocable_file_path, xsd_file_path, words_file_path)
+	xld_attribute_adder = XLDAttributeValueAdder(vocable_file_path, xsd_file_path, words_file_path)
 	
 	xld_attribute_adder.add_values_to_attribute_of_vocables(attribute_name, attribute_value, words_attribute_name)
 	VocableFileWriter.write(VocableFileWriter, xsd_file_path, vocable_file_path, xld_attribute_adder.xml_root)
-
+	
+	input('\nThe new vocable file is written. Press [Enter] to exit.')
+	
 if __name__ == '__main__':
 	main()

@@ -1,17 +1,13 @@
 import re
-
-from lxml import etree
-from src.WordListHelper import WordListHelper
-from src.WordListReader import WordListReader
-from src.exceptions.XMLInvalidException import XMLInvalidException
-
-from src.exceptions.XMLParseException import XMLParserException
-from src.xmlparser import XMLParser
+from xldattributevalueadder.WordListHelper import WordListHelper
+from xldattributevalueadder.WordListReader import WordListReader
+from xldattributevalueadder.exceptions.XMLParseException import XMLParserException
+from xldattributevalueadder.xmlparser.XMLParser import XMLParser
 
 __author__ = 'xiaolong'
 
 
-class XLDAttributeAdder():
+class XLDAttributeValueAdder():
 	
 	# initialize with default value
 	vocable_file_path = 'vocables.xml'

@@ -2,8 +2,7 @@ import re
 from xml.dom import minidom
 
 from lxml import etree
-
-from src.exceptions.XMLParseException import XMLParserException
+from xldattributevalueadder.exceptions.XMLParseException import XMLParserException
 
 __author__ = 'xiaolong'
 

@@ -1,5 +1,6 @@
 from lxml import etree
-from src import XMLInvalidException, XMLParser
+from xldattributevalueadder.exceptions.XMLInvalidException import XMLInvalidException
+from xldattributevalueadder.xmlparser.XMLParser import XMLParser
 
 __author__ = 'xiaolong'
 
